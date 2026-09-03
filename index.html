@@ -6,16 +6,16 @@
     <title>Maxine De Guia - ECE Journal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-/* Custom font and base colors for the 'Beige and Black' modern look */
+
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
     :root {
         --bg-color: #8fa6b8;
         --text-color: #1c1c1c;
         --primary-color: #a8a29e; 
         --header-height: 100px; 
-        --nav-height: 4rem; /* Tailwind's py-4 is approx 4rem */
-        --header-text-color: #ffffff; /* NEW VARIABLE: White color for text on the banner */
-        --header-text-hover: #fcd34d; /* NEW VARIABLE: A bright color (like yellow) for hover effect */
+        --nav-height: 4rem; 
+        --header-text-color: #ffffff; 
+        --header-text-hover: #fcd34d; 
     }
         body {
  font-family: 'Inter', sans-serif;
@@ -27,20 +27,18 @@
         padding-top: 96px;
         }
        .page-link {
-         padding: 0.5rem 0.5rem; /* Add padding for better hit area */
-         color: var(--header-text-color); /* NEW: Set default link color to white */
+         padding: 0.5rem 0.5rem; 
+         color: var(--header-text-color); 
     }
     .page-link:hover {
-        color: var(--header-text-hover); /* NEW: Change hover color */
+        color: var(--header-text-hover);
         transition: color 0.2s;
     }
     .active-page {
         font-weight: 600;
-        color: var(--header-text-hover); /* NEW: Highlight active link with hover color */
-        border-bottom: 2px solid var(--header-text-hover); /* NEW: Change underline color */
-    }
+        color: var(--header-text-hover); 
+        border-bottom: 2px solid var(--header-text-hover);
 
-    /* Responsive Hero Text Styling (No change needed here) */
     .hero-text {
         font-size: 3rem; 
     }
@@ -50,7 +48,7 @@
         }
     }
     
-    /* Style for the School Crest (No change needed here) */
+  
     .school-crest {
         width: 40px; 
         height: 40px;
@@ -64,9 +62,9 @@
             background-color: #fff;
             min-width: 180px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 20; /* Above other content */
+            z-index: 20; 
             border: 1px solid var(--primary-color);
-            top: 100%; /* Position below the main link */
+            top: 100%; 
             left: 50%;
             transform: translateX(-50%);
             padding: 0.5rem 0;
@@ -87,7 +85,7 @@
         .show-dropdown {
             display: block;
         }
-        .so-active-link { /* Style for active SO link within the dropdown */
+        .so-active-link { 
              font-weight: 700;
              background-color: #f0f0f0;
         }
